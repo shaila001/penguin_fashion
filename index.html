@@ -14,33 +14,15 @@
     /* Custom Font Classes */
     .font-bebas-neue { font-family: 'Bebas Neue', sans-serif; }
     .font-roboto { font-family: 'Roboto', sans-serif; }
-    /* Animated Gradient Background */
-    @keyframes gradient {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-    .bg-animate {
-      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-      background-size: 400% 400%;
-      animation: gradient 15s ease infinite;
-    }
   </style>
 </head>
-<body class="relative font-roboto text-white">
-  <!-- Dynamic Animated Background -->
-  <div class="fixed inset-0 z-[-1] bg-animate"></div>
-  
-  <!-- Header with a Colorful Gradient Navbar -->
-  <header class="bg-gradient-to-r from-red-500 to-yellow-500 sticky top-0 z-50">
+<body class="relative font-roboto text-gray-800 bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100">
+  <!-- Header with a Perfect-Colored Navbar -->
+  <header class="bg-sky-950 sticky top-0 z-50">
     <nav class="flex items-center justify-between px-6 py-4">
-      <div class="text-3xl font-bebas-neue text-white">Penguin Fashion</div>
+      <div class="text-3xl font-bebas-neue text-white">
+        Penguin Fashion
+      </div>
       <!-- Mobile Menu Toggle (Checkbox Hack) -->
       <div class="md:hidden">
         <input type="checkbox" id="menu-toggle" class="hidden peer" />
@@ -52,31 +34,31 @@
       </div>
       <!-- Desktop Menu -->
       <ul class="hidden md:flex space-x-8 text-lg">
-        <li><a href="#home" class="hover:text-black transition">Home</a></li>
-        <li><a href="#women" class="hover:text-black transition">Women</a></li>
-        <li><a href="#men" class="hover:text-black transition">Men</a></li>
-        <li><a href="#contact" class="hover:text-black transition">Contact</a></li>
+        <li><a href="#home" class="text-white hover:text-gray-300 transition">Home</a></li>
+        <li><a href="#women" class="text-white hover:text-gray-300 transition">Women</a></li>
+        <li><a href="#men" class="text-white hover:text-gray-300 transition">Men</a></li>
+        <li><a href="#contact" class="text-white hover:text-gray-300 transition">Contact</a></li>
       </ul>
     </nav>
     <!-- Mobile Menu -->
-    <div class="peer-checked:block hidden md:hidden bg-gradient-to-r from-red-500 to-yellow-500">
+    <div class="peer-checked:block hidden md:hidden bg-indigo-600">
       <ul class="px-6 pb-4 space-y-4 text-lg">
-        <li><a href="#home" class="block hover:text-black transition">Home</a></li>
-        <li><a href="#women" class="block hover:text-black transition">Women</a></li>
-        <li><a href="#men" class="block hover:text-black transition">Men</a></li>
-        <li><a href="#contact" class="block hover:text-black transition">Contact</a></li>
+        <li><a href="#home" class="block text-white hover:text-gray-300 transition">Home</a></li>
+        <li><a href="#women" class="block text-white hover:text-gray-300 transition">Women</a></li>
+        <li><a href="#men" class="block text-white hover:text-gray-300 transition">Men</a></li>
+        <li><a href="#contact" class="block text-white hover:text-gray-300 transition">Contact</a></li>
       </ul>
     </div>
   </header>
 
-  <!-- Main Content (positioned above the background) -->
+  <!-- Main Content (Positioned Above the Background) -->
   <main class="relative z-10 pt-20 max-w-6xl mx-auto px-4">
     <!-- Banner Section -->
     <section id="home" class="py-12 flex flex-col md:flex-row items-center justify-between">
       <div class="space-y-6">
         <h1 class="text-6xl uppercase font-bebas-neue">
-          <span class="text-yellow-300">Be the Penguins</span><br>
-          <span class="text-red-300">of Winter</span>
+          <span class="text-indigo-600">Be the Penguins</span><br>
+          <span class="text-purple-600">of Winter</span>
         </h1>
         <p class="text-lg max-w-lg">
           Discover the latest in winter fashion with Penguin Fashion. Embrace your style with our exclusive collection.
@@ -95,36 +77,36 @@
       <h3 class="text-4xl uppercase font-bebas-neue mb-8">Women Jacket</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Jacket Card 1 -->
-        <div class="p-5 space-y-4 bg-black bg-opacity-50 rounded-3xl shadow hover:shadow-xl transition-shadow duration-300">
+        <div class="p-5 space-y-4 bg-white bg-opacity-80 rounded-3xl shadow hover:shadow-xl transition-shadow duration-300">
           <img src="images/jacket-1.png" alt="Yellow Coat Jacket" class="w-full p-5 rounded-3xl bg-gray-100 hover:scale-105 transition-transform duration-300" />
           <h4 class="text-2xl font-bold">Yellow Coat Jacket</h4>
           <p>Elevate your style with our exclusive yellow coat jacket, designed for comfort and elegance.</p>
           <div class="flex items-center justify-between">
-            <span class="text-yellow-400 text-3xl font-semibold">$234</span>
+            <span class="text-indigo-600 text-3xl font-semibold">$234</span>
             <a href="#" class="bg-gradient-to-r from-green-500 to-blue-500 px-6 py-3 rounded-xl font-bold hover:scale-105 transition-transform duration-300 inline-block">
               BUY NOW
             </a>
           </div>
         </div>
         <!-- Jacket Card 2 -->
-        <div class="p-5 space-y-4 bg-black bg-opacity-50 rounded-3xl shadow hover:shadow-xl transition-shadow duration-300">
+        <div class="p-5 space-y-4 bg-white bg-opacity-80 rounded-3xl shadow hover:shadow-xl transition-shadow duration-300">
           <img src="images/jacket-2.png" alt="Yellow Coat Jacket" class="w-full p-5 rounded-3xl bg-gray-100 hover:scale-105 transition-transform duration-300" />
           <h4 class="text-2xl font-bold">Yellow Coat Jacket</h4>
           <p>A perfect blend of style and comfort, our jacket is your go-to for a chic winter look.</p>
           <div class="flex items-center justify-between">
-            <span class="text-yellow-400 text-3xl font-semibold">$234</span>
+            <span class="text-indigo-600 text-3xl font-semibold">$234</span>
             <a href="#" class="bg-gradient-to-r from-green-500 to-blue-500 px-6 py-3 rounded-xl font-bold hover:scale-105 transition-transform duration-300 inline-block">
               BUY NOW
             </a>
           </div>
         </div>
         <!-- Jacket Card 3 -->
-        <div class="p-5 space-y-4 bg-black bg-opacity-50 rounded-3xl shadow hover:shadow-xl transition-shadow duration-300">
+        <div class="p-5 space-y-4 bg-white bg-opacity-80 rounded-3xl shadow hover:shadow-xl transition-shadow duration-300">
           <img src="images/jacket-3.png" alt="Yellow Coat Jacket" class="w-full p-5 rounded-3xl bg-gray-100 hover:scale-105 transition-transform duration-300" />
           <h4 class="text-2xl font-bold">Yellow Coat Jacket</h4>
           <p>Crafted with precision and designed to impress, elevate your winter wardrobe with ease.</p>
           <div class="flex items-center justify-between">
-            <span class="text-yellow-400 text-3xl font-semibold">$234</span>
+            <span class="text-indigo-600 text-3xl font-semibold">$234</span>
             <a href="#" class="bg-gradient-to-r from-green-500 to-blue-500 px-6 py-3 rounded-xl font-bold hover:scale-105 transition-transform duration-300 inline-block">
               BUY NOW
             </a>
@@ -138,36 +120,36 @@
       <h3 class="text-4xl uppercase font-bebas-neue mb-8">Men Jacket</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Jacket Card 1 -->
-        <div class="p-5 space-y-4 bg-black bg-opacity-50 rounded-3xl shadow hover:shadow-xl transition-shadow duration-300">
+        <div class="p-5 space-y-4 bg-white bg-opacity-80 rounded-3xl shadow hover:shadow-xl transition-shadow duration-300">
           <img src="images/jacket-4.png" alt="Snowboard Jacket Mens" class="w-full p-5 rounded-3xl bg-gray-100 hover:scale-105 transition-transform duration-300" />
           <h4 class="text-2xl font-bold">Snowboard Jacket Mens</h4>
           <p>Experience warmth and style on the slopes with our high-performance snowboard jacket.</p>
           <div class="flex items-center justify-between">
-            <span class="text-yellow-400 text-3xl font-semibold">$234</span>
+            <span class="text-indigo-600 text-3xl font-semibold">$234</span>
             <a href="#" class="bg-gradient-to-r from-green-500 to-blue-500 px-6 py-3 rounded-xl font-bold hover:scale-105 transition-transform duration-300 inline-block">
               BUY NOW
             </a>
           </div>
         </div>
         <!-- Jacket Card 2 -->
-        <div class="p-5 space-y-4 bg-black bg-opacity-50 rounded-3xl shadow hover:shadow-xl transition-shadow duration-300">
+        <div class="p-5 space-y-4 bg-white bg-opacity-80 rounded-3xl shadow hover:shadow-xl transition-shadow duration-300">
           <img src="images/jacket-5.png" alt="Man Leather Jackets" class="w-full p-5 rounded-3xl bg-gray-100 hover:scale-105 transition-transform duration-300" />
           <h4 class="text-2xl font-bold">Man Leather Jackets</h4>
           <p>Timeless style meets modern design. Our leather jackets are crafted for the discerning gentleman.</p>
           <div class="flex items-center justify-between">
-            <span class="text-yellow-400 text-3xl font-semibold">$234</span>
+            <span class="text-indigo-600 text-3xl font-semibold">$234</span>
             <a href="#" class="bg-gradient-to-r from-green-500 to-blue-500 px-6 py-3 rounded-xl font-bold hover:scale-105 transition-transform duration-300 inline-block">
               BUY NOW
             </a>
           </div>
         </div>
         <!-- Jacket Card 3 -->
-        <div class="p-5 space-y-4 bg-black bg-opacity-50 rounded-3xl shadow hover:shadow-xl transition-shadow duration-300">
+        <div class="p-5 space-y-4 bg-white bg-opacity-80 rounded-3xl shadow hover:shadow-xl transition-shadow duration-300">
           <img src="images/jacket-6.png" alt="Men Casual Jackets" class="w-full p-5 rounded-3xl bg-gray-100 hover:scale-105 transition-transform duration-300" />
           <h4 class="text-2xl font-bold">Men Casual Jackets</h4>
           <p>Effortless style and comfort come together in our collection of casual jackets, perfect for every occasion.</p>
           <div class="flex items-center justify-between">
-            <span class="text-yellow-400 text-3xl font-semibold">$234</span>
+            <span class="text-indigo-600 text-3xl font-semibold">$234</span>
             <a href="#" class="bg-gradient-to-r from-green-500 to-blue-500 px-6 py-3 rounded-xl font-bold hover:scale-105 transition-transform duration-300 inline-block">
               BUY NOW
             </a>
@@ -183,9 +165,9 @@
       <div class="flex flex-col md:flex-row justify-between items-center">
         <p>&copy; 2025 Penguin Fashion. All rights reserved.</p>
         <div class="flex space-x-4 mt-4 md:mt-0">
-          <a href="#" class="hover:text-yellow-300 transition">Facebook</a>
-          <a href="#" class="hover:text-yellow-300 transition">Instagram</a>
-          <a href="#" class="hover:text-yellow-300 transition">Twitter</a>
+          <a href="#" class="hover:text-indigo-400 transition">Facebook</a>
+          <a href="#" class="hover:text-indigo-400 transition">Instagram</a>
+          <a href="#" class="hover:text-indigo-400 transition">Twitter</a>
         </div>
       </div>
     </div>
